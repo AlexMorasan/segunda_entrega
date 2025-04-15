@@ -1,7 +1,41 @@
-.bg-orange {
-    background-color: orangered;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    scroll-behavior: smooth;
 }
 
-.bg-black {
+body{
     background-color: black;
+}
+
+header{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.LogoATP{
+    font-size: 50px;
+    color:orange;
+}
+
+.LogoATP:hover{
+    transform: scale(1.1);
+}
+header span{
+    font-size: 40px;
+    color:white;
+}
+
+.Navegacion{
+    display:flex;
+    color:white;
 }
