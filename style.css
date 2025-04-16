@@ -12,10 +12,8 @@ body{
 }
 
 header{
+    background-color: black;
     padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
 }
 
 header a{
@@ -23,11 +21,13 @@ header a{
 }
 
 .LogoATP{
-    font-size: 50px;
-    color:orange;
+    font-size: 60px;
+    font-weight: bold;
+    color:orangered;
 }
 
 .LogoATP:hover{
+    color:orangered;
     transform: scale(1.1);
 }
 header span{
@@ -37,5 +37,118 @@ header span{
 
 .Navegacion{
     display:flex;
+
+}
+
+.Navegacion a{
     color:white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.Logo2{
+    color:rgba(255, 255, 255, 0.37);
+}
+
+.nav-link{
+    color:white;
+    font-size:20px;
+}
+
+.nav-link:hover{
+    color:whitesmoke;
+    transform: scale(1.1);
+}
+
+.ATPtext{
+    color:white;
+}
+
+.fotos{
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height:100%; /* Mantiene las proporciones */
+}
+
+.TitleStyle{
+    color:orangered
+}
+
+.ATPDiv{
+    padding-top: 10px;
+    border-top: white solid 2px;
+}
+
+.botones{
+    background-color: orangered;
+    border-radius: 5px;
+    color:white;
+    padding:5px;
+}
+
+.botones:hover{
+    background-color:white;
+    color:orangered;
+    transform: scale(1.1);
+}
+
+.NewDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.ConsejoTitulo{
+    color:orangered;
+    font-size:  20px;
+    text-align:center;
+}
+
+video{
+    width: 300px; /* Ajusta al ancho del contenedor */
+    height: 600px; /* Mantiene las proporciones */
+    object-fit: cover;
+    background-color: white;
+}
+
+.Videostyle{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer__tittle{
+    color:orangered;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+footer div a{
+    color:white;
+    font-size:17px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.log__button{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.log__button:hover{
+    color:orangered;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+
+
+.redes{
+    padding: 10px;
+    font-size: 50px;
 }
