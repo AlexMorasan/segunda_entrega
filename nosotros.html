@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="shortcut icon" href="Imagenes/logoATP.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
@@ -40,43 +40,43 @@
                 </ul>
             </div>
         </nav>
-        <!-- Inicio de carrusel -->
-
-        <div id="carouselExample" class="carousel slide">
+        <!-- Prueba carrusel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+          
+            <!-- Contenido del carrusel -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Imagenes/AreaFuncional.jpg" class="d-block w-100 instalaciones" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carrusel__text">Área de Entrenamiento funcional</h5>
-                    <p class="carrusel__text">Ejercicios de fuerza, coordinación y aeróbicos.</p>
-                </div>
+                <img src="Imagenes/yoga.jpg" class="d-block w-100" alt="Primera imagen">
               </div>
               <div class="carousel-item">
-                <img src="Imagenes/AreaPesas.jpg" class="d-block w-100 instalaciones" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carrusel__text">Área de Pesas</h5>
-                    <p class="carrusel__text">Contamos con mancuernas, pesas runas y máquinas para entrenar.</p>
-                </div>
-              </div>
+                <img src="Imagenes/vestidores.jpg" class="d-block w-100" alt="Segunda imagen">
               </div>
               <div class="carousel-item">
-                <img src="Imagenes/ZonaVestidores.jpg" class="d-block w-100 instalaciones" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carrusel__text">Zona de vestidores</h5>
-                    <p class="carrusel__text">Vestidores y regaderas para mujeres y hombres</p>
-                </div>
+                <img src="Imagenes/pesas.jpg" class="d-block w-100" alt="Tercera imagen">
+              </div>
+              <div class="carousel-item">
+                <img src="Imagenes/funcional.jpg" class="d-block w-100" alt="Tercera imagen">
               </div>
             </div>
+          
+            <!-- Controles de navegación -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+              <span class="visually-hidden">Siguiente</span>
             </button>
           </div>
-         <!-- Fin de carrusel -->
+         <!-- Fin prueba carrusel -->
                   <!-- Inicio de explicació -->
         <div class="container mt-5 ATPDiv">
             <div class="row">
@@ -92,7 +92,7 @@
                         <li>Fortalecimiento del core: Se enfoca en el núcleo del cuerpo (abdomen, espalda baja y pelvis) para mejorar la estabilidad y reducir lesiones.</li>
                         <li>Mejora del equilibrio y coordinación: Involucra ejercicios que requieren control del cuerpo y estabilidad.</li>
                     </ul>
-                    <h4> Beneficios del entrenamiento funcional</h4>
+                    <h4 class="TitleStyle"> Beneficios del entrenamiento funcional</h4>
                     <ul>
                         <li>Previene lesiones</li>
                         <li>Mejora postura y movilidad</li>
@@ -111,16 +111,28 @@
             <h2 class="TitleStyle" style="text-align: center;">Conoce a tus entrenadores</h2>
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <img class="entrenadores" src="Imagenes/femaletrainer1.jpg"> 
+                    <div class="trainer-container">
+                        <img class="entrenadores" src="Imagenes/femaletrainer1.jpg"> 
+                        <div class="trainer-text">Especialista en entrenamiento funcional</div>
+                    </div>
                 </div>
             <div class="col-md-3 col-sm-12">
-                <img class="entrenadores" src="Imagenes/maletrainer1.jpg"> 
+                <div class="trainer-container">
+                    <img class="entrenadores" src="Imagenes/maletrainer1.jpg"> 
+                    <div class="trainer-text">Especialista en hipertrofia</div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-12">
-                <img class="entrenadores" src="Imagenes/femaletrainer2.jpg"> 
+                <div class="trainer-container">
+                    <img class="entrenadores" src="Imagenes/femaletrainer2.jpg"> 
+                    <div class="trainer-text">Especialista en estiramiento</div>/div>
+                </div> 
             </div>
             <div class="col-md-3 col-sm-12">
-                <img class="entrenadores" src="Imagenes/maletrainer2.jpg"> 
+                <div class="trainer-container">
+                    <img class="entrenadores" src="Imagenes/maletrainer2.jpg"> 
+                    <div class="trainer-text">Especialista en fuerza explosiva</div>
+                </div>
             </div>
             </div>
         </div>
